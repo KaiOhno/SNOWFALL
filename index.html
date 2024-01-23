@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snowfall Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="snow-canvas-container">
+      <canvas id="snow-canvas"></canvas>
+      <input type="text" id="custom-text" placeholder="Enter Text" size="10" />
+      <div class="slider-container" id="intensity-container">
+        <label for="snow-intensity">Snow Intensity</label>
+        <input
+          type="range"
+          id="snow-intensity"
+          min="100"
+          max="500"
+          value="300" />
+      </div>
+      <div class="slider-container" id="size-container">
+        <label for="text-size">Text Size</label>
+        <input type="range" id="text-size" min="10" max="60" value="30" />
+      </div>
+      <button id="restart-button">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

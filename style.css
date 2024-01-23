@@ -1,0 +1,79 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+#snow-canvas-container {
+  position: relative;
+  height: 100%;
+}
+
+#snow-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#custom-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: none;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px; /* Increased initial font size */
+  width: 300px; /* Set an initial width */
+  z-index: 100;
+}
+
+.slider-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 300px; /* Increased width of slider container */
+  margin-bottom: 20px; /* Add more space between sliders */
+}
+
+#intensity-container {
+  top: 20px; /* Adjust position for better spacing */
+}
+
+#size-container {
+  top: 80px; /* Adjust position for better spacing */
+}
+
+.slider-container label {
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#snow-intensity,
+#text-size {
+  width: 100%;
+}
+
+#restart-button {
+  position: absolute;
+  top: 150px; /* Adjust position to avoid overlapping */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: white;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
